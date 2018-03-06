@@ -3,17 +3,12 @@
 
 # In[ ]:
 
-'''
-0212更新: rang 需拆開、修改fo.open參數錯誤  --> 0212版本可使用單次下載檔案
-'''
 
 import sys
 import os
 from datetime import datetime
-sys.path.append('C:/Users/user/Documents/')#提供搜索路径
 from crawler_model_1111 import *
 from util import *
-
 
 def main():
     
@@ -37,7 +32,7 @@ def main():
     try:
         para_dict['rang']
     except:
-        para_dict['rang']='1-2'
+        para_dict['rang']='17-18'
         print 'using default rang: '+para_dict['rang']
     try:
         para_dict['sect']
@@ -63,8 +58,6 @@ def main():
     
     
     
-#if __name__== "__main__":
-#    main()
-    
-main()
+if __name__== "__main__":
+    main()
 
