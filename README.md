@@ -17,6 +17,8 @@ Enter the following code in cmd
 
     python main.py dire_para="C:/Users/user/Documents" rang=16-17 sect=00 save=F
 
+## Parameters
+
 ### **dire_para**: ###
 directory/path that crawled data being saved.
 
