@@ -38,3 +38,6 @@ suffix to be added on the filename.
 if the log file should be saved (in the same directory).
 
 (T means True, and F means False)
+
+## Output
+The crawled job would be saved as xml format, which has "Date" and "ITEM_COUNT" tags under the root. And job_opening data are saved with the tag "ITEM" which is also just beneath the root.
