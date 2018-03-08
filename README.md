@@ -41,3 +41,12 @@ if the log file should be saved (in the same directory).
 
 ## Output
 The crawled job would be saved as xml format, which has "Date" and "ITEM_COUNT" tags under the root. And job_opening data are saved with the tag "ITEM" which is also just beneath the root.
+Here's the example code that can be executed with python.
+
+    import xml.etree.cElementTree as ET
+    date_tree=ET.ElementTree(file='###yourfilename###')
+    print 'Date:'+str(date_tree.getroot().get('Date')),' Job_count:',str(date_tree.getroot().get('ITEM_COUNT'))
+    print '-----example-----'
+    a=date_tree.findall('ITEM')
+    for tag in a[0].attrib.items():
+        print tag[0]+':'+tag[1]
